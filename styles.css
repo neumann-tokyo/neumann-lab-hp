@@ -601,6 +601,22 @@ a:active {
   border-radius: 0 1rem 1rem 0;
   padding: 0 1rem;
 }
+@media only screen and (max-width: 800px) {
+  .events-card {
+    flex-direction: column;
+  }
+  .events-card-left {
+    border-width: var(--layout-border-width) var(--layout-border-width) 0 var(--layout-border-width);
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+  }
+  .events-card-right {
+    border-width: 0 var(--layout-border-width) var(--layout-border-width) var(--layout-border-width);
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    padding: 0;
+  }
+}
 .blog-container {
   display: flex;
   flex-direction: column;
