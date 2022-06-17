@@ -423,9 +423,6 @@ a:active {
   font-family: 'Fascinate', cursive;
   margin: 0;
 }
-.header-subtitle {
-
-}
 .header-nav {
   display: flex;
   -moz-column-gap: .5rem;
@@ -460,6 +457,21 @@ a:active {
   margin: 2rem 0;
   display: flex;
   gap: 0.5rem;
+}
+.footer-nav-item {
+  color: var(--text-color);
+}
+.footer-nav-item:link {
+  color: var(--text-color);
+}
+.footer-nav-item:visited {
+  color: var(--text-color);
+}
+.footer-nav-item:hover {
+  color: var(--text-color);
+}
+.footer-nav-item:active {
+  color: var(--text-color);
 }
 .catchphrase {
   display: grid;
