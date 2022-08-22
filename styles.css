@@ -420,13 +420,13 @@ a:active {
   height: 48px;
 }
 .header-title {
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   margin: 0;
 }
 .header-nav {
   display: flex;
-  -moz-column-gap: .5rem;
-       column-gap: .5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .header-nav-item {
   color: var(--text-color);
@@ -452,6 +452,9 @@ a:active {
     flex-direction: column;
     align-items: center;
   }
+  .header-nav-item {
+    font-size: 2.1rem;
+  }
 }
 .footer-nav {
   margin: 2rem 0;
@@ -473,6 +476,15 @@ a:active {
 .footer-nav-item:active {
   color: var(--text-color);
 }
+@media only screen and (max-width: 800px) {
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav-item {
+    font-size: 2.1rem;
+  }
+}
 .catchphrase {
   display: grid;
   margin: 0 0 2rem 0;
@@ -484,7 +496,7 @@ a:active {
      object-fit: cover;
   -o-object-position: 0 80%;
      object-position: 0 80%;
-  filter: brightness(75%);
+  filter: brightness(60%);
   grid-column-start: 1;
   grid-row-start: 1;
   border-radius: 2rem;
@@ -495,7 +507,7 @@ a:active {
   justify-self: center;
   align-self: center;
   z-index: var(--zindex-catchphrase-title);
-  font-family: 'Fascinate', cursive;
+  font-family: "Fascinate", cursive;
   font-size: 5rem;
   color: white;
   text-shadow: 2px 2px 5px white;
@@ -530,7 +542,7 @@ a:active {
   list-style: none;
 }
 .top-images-row-text-list-item {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 @media only screen and (max-width: 800px) {
   .catchphrase {
