@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.header-title {
+  font-family: "Fascinate", cursive;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.header-nav-item {
+  color: var(--text-color);
+}
+
+.header-nav-item:link {
+  color: var(--text-color);
+}
+
+.header-nav-item:visited {
+  color: var(--text-color);
+}
+
+.header-nav-item:hover {
+  color: var(--text-color);
+}
+
+.header-nav-item:active {
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-nav-item {
+    font-size: 2.1rem;
+  }
+}

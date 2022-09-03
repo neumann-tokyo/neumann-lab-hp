@@ -1,0 +1,82 @@
+.catchphrase {
+  display: grid;
+  margin: 0 0 2rem 0;
+}
+
+.catchphrase-image {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  object-position: 0 80%;
+  filter: brightness(60%);
+  grid-column-start: 1;
+  grid-row-start: 1;
+  border-radius: 2rem;
+}
+
+.catchphrase-title {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  justify-self: center;
+  align-self: center;
+  z-index: var(--zindex-catchphrase-title);
+  font-family: "Fascinate", cursive;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 5px white;
+}
+
+/* ----------- */
+
+.top-images {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.top-images-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  align-items: center;
+}
+.top-images-row-r {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.top-images-row-image {
+  max-width: 50%;
+  max-height: 25rem; /* TODO 固定値やめる */
+  object-fit: cover;
+}
+
+.top-images-row-text-list {
+  list-style: none;
+}
+.top-images-row-text-list-item {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .catchphrase {
+    margin: 1rem 0;
+  }
+  .catchphrase-image {
+    height: 30rem;
+  }
+
+  .top-images-row {
+    flex-direction: column;
+  }
+  .top-images-row-r {
+    flex-direction: column;
+  }
+  .top-images-row-image {
+    max-width: 100%;
+  }
+  .top-images-row-text-list {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,29 @@
+---
+title: ノイマンラボ -- Neumann Lab -- 開催情報
+layout: layouts/main.njk
+---
+
+<div class="events">
+  <h2 class="emphasis1">開催情報</h2>
+  <div class="events-container">
+    {% for event in events %}
+    <div class="events-card">
+      <div class="events-card-left">
+        <img src="{{ event.image }}" alt="Python" class="events-image" />
+      </div>
+      <div class="events-card-right">
+        <h3>
+          <span class="emphasis2">
+            {{ event.title }}
+          </span>
+        </h3>
+        <p>開催日時: {{ event.dates }}</p>
+        <p>募集人数: {{ event.numbers }} | 参加費: {{ event.fee }}</p>
+        <p>
+          <a href="{{ event.url }}" target="_blank">参加申し込み</a>
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

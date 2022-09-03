@@ -1,0 +1,36 @@
+:root {
+  --layout-border-width: 5px;
+
+  --bg-color: #fceade;
+  --text-color: #222222;
+  --main-bg-color: #F4BFBF;
+  /* --main-fg-color: #222222; */
+  --assort-bg-color: #FFD9C0;
+  /* --assort-fg-color: #222222; */
+  --accent-bg-color: #FAF0D7;
+  --accent-fg-color: #72b8e0;
+  --accent2-fg-color: #de8c8c;
+
+  --zindex-catchphrase-title: 1;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--accent-fg-color);
+}
+a:link {
+  color: var(--accent-fg-color);
+}
+a:visited {
+  color: var(--accent-fg-color);
+}
+a:hover {
+  color: var(--accent-fg-color);
+}
+a:active {
+  color: var(--accent-fg-color);
+}

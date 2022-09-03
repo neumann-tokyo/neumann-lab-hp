@@ -1,0 +1,24 @@
+---
+title: ノイマンラボ -- Neumann Lab -- ブログ
+layout: layouts/main.njk
+---
+
+{% set postslist = search.pages("type=posts", "date=desc") %}
+
+<div class="blog">
+  <div class="blog-container">
+    {% for post in postslist %}
+    <div class="blog-card">
+      <div class="blog-card-date">
+        {{ post.data.date | date('DATE') }}
+      </div>
+      <h2 class="blog-card-title">
+        <a href="{{ post.data.url }}">
+          {{ post.data.title }}
+        </a>
+      </h2>
+      <div class="blog-card-description">{{ post.data.description }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
