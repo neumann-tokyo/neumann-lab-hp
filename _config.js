@@ -18,5 +18,6 @@ site.use(date());
 site.use(parcelCss());
 site.use(terser());
 site.copy("img");
+site.copy("CNAME");
 
 export default site;

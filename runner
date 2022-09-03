@@ -21,11 +21,7 @@ npx prettier -w .
 npx prettier -w --parser=html $(find . -name "*.njk")
 ;;
 "build") ## build for production
-mv ../neumann-lab-hp-production/.git ../
-mv ../neumann-lab-hp-production/CNAME ../
-lume --dest ../neumann-lab-hp-production/
-mv ../.git ../neumann-lab-hp-production
-mv ../CNAME ../neumann-lab-hp-production
+lume --dest docs
 ;;
 "help" | *)
 (
