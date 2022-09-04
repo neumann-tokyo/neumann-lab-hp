@@ -3,6 +3,7 @@
   align-items: flex-end;
   column-gap: 0.5rem;
   margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .header-logo {
@@ -10,9 +11,12 @@
   height: 48px;
 }
 
+.header-title-image {
+  width: 256px;
+}
+
 .header-title {
-  font-family: "Fascinate", cursive;
-  margin: 0;
+  display: none;
 }
 
 .header-nav {

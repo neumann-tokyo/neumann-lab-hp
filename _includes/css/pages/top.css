@@ -20,7 +20,7 @@
   justify-self: center;
   align-self: center;
   z-index: var(--zindex-catchphrase-title);
-  font-family: "Fascinate", cursive;
+  font-family: cursive;
   font-size: 5rem;
   color: white;
   text-shadow: 2px 2px 5px white;

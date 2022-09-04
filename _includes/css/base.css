@@ -3,11 +3,11 @@
 
   --bg-color: #fceade;
   --text-color: #222222;
-  --main-bg-color: #F4BFBF;
+  --main-bg-color: #f4bfbf;
   /* --main-fg-color: #222222; */
-  --assort-bg-color: #FFD9C0;
+  --assort-bg-color: #ffd9c0;
   /* --assort-fg-color: #222222; */
-  --accent-bg-color: #FAF0D7;
+  --accent-bg-color: #faf0d7;
   --accent-fg-color: #72b8e0;
   --accent2-fg-color: #de8c8c;
 
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: sans-serif;
   font-size: 1.2rem;
 }
 
