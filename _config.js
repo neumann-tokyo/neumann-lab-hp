@@ -9,7 +9,7 @@ import parcelCss from "lume/plugins/parcel_css.ts";
 
 const site = lume();
 
-site.ignore("README.md", "CHANGELOG.md", "node_modules");
+site.ignore("README.md", "CHANGELOG.md", "node_modules", "img_source");
 site.use(attributes());
 site.use(base_path());
 site.use(code_highlight());

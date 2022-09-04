@@ -5,25 +5,10 @@
 
 .catchphrase-image {
   width: 100%;
-  height: 40rem;
   object-fit: cover;
-  object-position: 0 80%;
-  filter: brightness(60%);
   grid-column-start: 1;
   grid-row-start: 1;
   border-radius: 2rem;
-}
-
-.catchphrase-title {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  justify-self: center;
-  align-self: center;
-  z-index: var(--zindex-catchphrase-title);
-  font-family: cursive;
-  font-size: 5rem;
-  color: white;
-  text-shadow: 2px 2px 5px white;
 }
 
 /* ----------- */
