@@ -1,0 +1,65 @@
+.place-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.place-left {
+  flex: 1;
+}
+
+.place-right {
+  flex: 1;
+}
+
+.place-map {
+  width: 100%;
+  height: 450px;
+}
+
+.place-information dt {
+  font-weight: bold;
+}
+
+/* ------------ */
+
+.teachers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers-photo {
+  width: 300px;
+}
+
+.teachers-profile {
+  width: 80%;
+}
+
+/* ------------ */
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-photo {
+  width: 300px;
+}
+
+.teachers-description {
+  width: 80%;
+}
+
+/* ------------ */
+
+@media only screen and (max-width: 800px) {
+  .place-container {
+    flex-direction: column;
+  }
+
+  .place-map {
+    height: 300px;
+  }
+}
