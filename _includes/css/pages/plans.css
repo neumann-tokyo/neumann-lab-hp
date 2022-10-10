@@ -7,6 +7,7 @@
     "image description";
   border: double var(--layout-border-width) var(--text-color);
   border-radius: 1rem;
+  gap: 1rem;
 }
 
 .plan-title {
@@ -21,6 +22,10 @@
   grid-area: image;
   justify-self: center;
   align-items: center;
+}
+
+.plan-image-img {
+  width: 100%;
 }
 
 .plan-description {
