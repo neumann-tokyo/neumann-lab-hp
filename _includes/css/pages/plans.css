@@ -8,6 +8,7 @@
   border: double var(--layout-border-width) var(--text-color);
   border-radius: 1rem;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .plan-title {
