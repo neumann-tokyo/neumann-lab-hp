@@ -11,6 +11,10 @@
   --accent-fg-color: #72b8e0;
   --accent2-fg-color: #de8c8c;
 
+  --accent-button-bg-color: #ffb703;
+  --accent-button-line-color: #fb8500;
+  --accent-button-text-color: #ffffff;
+
   --zindex-catchphrase-title: 1;
 }
 
