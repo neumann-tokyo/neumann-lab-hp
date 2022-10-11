@@ -23,6 +23,7 @@
   grid-area: image;
   justify-self: center;
   align-items: center;
+  margin: 0 1rem;
 }
 
 .plan-image-img {
@@ -31,4 +32,16 @@
 
 .plan-description {
   grid-area: description;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .plan-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "image"
+      "description";
+  }
 }
