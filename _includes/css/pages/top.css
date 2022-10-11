@@ -1,13 +1,9 @@
 .catchphrase {
-  display: grid;
   margin: 0 0 2rem 0;
 }
 
 .catchphrase-image {
   width: 100%;
-  object-fit: cover;
-  grid-column-start: 1;
-  grid-row-start: 1;
   border-radius: 2rem;
 }
 
@@ -44,12 +40,15 @@
   margin-bottom: 0.5rem;
 }
 
+.top-next-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 @media only screen and (max-width: 800px) {
   .catchphrase {
     margin: 1rem 0;
-  }
-  .catchphrase-image {
-    height: 30rem;
   }
 
   .top-images-row {
@@ -63,5 +62,9 @@
   }
   .top-images-row-text-list {
     padding-left: 0;
+  }
+
+  .top-next-actions {
+    flex-direction: column;
   }
 }
