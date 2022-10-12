@@ -1,0 +1,47 @@
+.plan-container {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title"
+    "image description";
+  border: double var(--layout-border-width) var(--text-color);
+  border-radius: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.plan-title {
+  grid-area: title;
+  background-color: var(--accent-bg-color);
+  width: 100%;
+  text-align: center;
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.plan-image {
+  grid-area: image;
+  justify-self: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.plan-image-img {
+  width: 100%;
+}
+
+.plan-description {
+  grid-area: description;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .plan-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "image"
+      "description";
+  }
+}

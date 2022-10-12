@@ -6,3 +6,7 @@
   font-weight: bold;
   background: linear-gradient(transparent 70%, var(--accent-fg-color) 70%);
 }
+
+.text-center {
+  text-align: center;
+}
