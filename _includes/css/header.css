@@ -72,6 +72,15 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .layout-header {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "title"
+      "nav"
+      "announcement";
+    row-gap: 1rem;
+  }
+
   .header {
     flex-direction: column;
     align-items: center;
